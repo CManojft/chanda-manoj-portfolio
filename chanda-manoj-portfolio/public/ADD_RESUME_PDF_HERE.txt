@@ -1,0 +1,1 @@
+Place your PDF résumé in this folder and rename it Chanda_Manoj_Resume.pdf. The download button expects this exact filename.
