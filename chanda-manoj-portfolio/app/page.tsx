@@ -112,31 +112,36 @@ export default function Home() {
       </header>
 
       <section id="home" className="hero-section section-anchor">
-        <div className="container relative grid min-h-[calc(100vh-76px)] items-center gap-14 py-20 lg:grid-cols-[1.15fr_.85fr]">
-          <div className="relative z-10">
+        <div className="container relative grid min-h-[calc(100vh-76px)] items-center gap-12 py-16 lg:grid-cols-[1.08fr_.92fr]">
+          <div className="hero-copy relative z-10">
             <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6 }} className="availability"><span className="pulse-dot" /> AVAILABLE TO JOIN IMMEDIATELY</motion.div>
-            <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .15 }} className="mt-8 text-sm font-semibold uppercase tracking-[.24em] text-violet-300">Hello, I&apos;m</motion.p>
-            <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .2, duration: .7 }} className="hero-title mt-3">Chanda <span className="gradient-text">Manoj.</span></motion.h1>
-            <motion.h2 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .32, duration: .7 }} className="mt-5 max-w-2xl text-2xl font-medium leading-snug text-slate-200 sm:text-3xl">Agentic AI Developer <span className="text-slate-600">&</span> Data Analyst</motion.h2>
-            <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .42, duration: .7 }} className="mt-6 max-w-xl text-base leading-8 text-slate-400">I build intelligent, tool-using AI workflows and turn data into meaningful insights. I bring together statistics, Python, machine learning and Azure technologies to solve practical problems.</motion.p>
-            <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .55 }} className="mt-9 flex flex-wrap gap-3">
+            <motion.p initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .12 }} className="hero-intro">HELLO, I&apos;M</motion.p>
+            <motion.h1 initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .2, duration: .7 }} className="hero-title">Chanda<br /><span className="gradient-text">Manoj.</span></motion.h1>
+            <motion.h2 initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .32 }} className="hero-role">Agentic AI Developer <span>&amp;</span> Data Analyst</motion.h2>
+            <motion.p initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .42 }} className="hero-description">I build intelligent, tool-using AI workflows and turn data into meaningful insights. I bring together statistics, Python, machine learning and Azure technologies to solve practical problems.</motion.p>
+            <motion.div initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .52 }} className="mt-8 flex flex-wrap gap-3">
               <a className="button" href="#projects">Explore my work <ArrowUpRight size={17} /></a>
               <a className="button button-ghost" href="/Chanda_Manoj_Resume.pdf" download><Download size={16} /> Download résumé</a>
             </motion.div>
-            <div className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-slate-500">
-              <span className="inline-flex items-center gap-2"><MapPin size={15} className="text-violet-300" /> Hyderabad, India</span>
-              <a className="inline-flex items-center gap-2 transition hover:text-white" href="mailto:manojchanda.bhu.stcomp@gmail.com"><Mail size={15} className="text-violet-300" /> Email me</a>
-              <a className="inline-flex items-center gap-2 transition hover:text-white" href="https://www.linkedin.com/in/chanda-manoj-b14b21262/" target="_blank" rel="noreferrer"><Linkedin size={15} className="text-violet-300" /> LinkedIn</a>
+            <div className="hero-meta mt-10 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm">
+              <span className="inline-flex items-center gap-2"><MapPin size={15} /> Hyderabad, India</span>
+              <a className="inline-flex items-center gap-2 transition hover:text-white" href="mailto:manojchanda.bhu.stcomp@gmail.com"><Mail size={15} /> Email me</a>
+              <a className="inline-flex items-center gap-2 transition hover:text-white" href="https://www.linkedin.com/in/chanda-manoj-b14b21262/" target="_blank" rel="noreferrer"><Linkedin size={15} /> LinkedIn</a>
             </div>
+            <div className="hero-focus mt-8"><span>FOCUS AREAS</span><b>AGENTIC AI</b><i /> <b>DATA ANALYTICS</b><i /> <b>MACHINE LEARNING</b></div>
           </div>
 
-          <motion.div initial={{ opacity: 0, scale: .9, rotate: 3 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: .9, delay: .25 }} className="hero-visual mx-auto w-full max-w-[490px]">
-            <div className="orbit orbit-one" /><div className="orbit orbit-two" />
-            <div className="visual-core"><div className="core-glow" /><BrainCircuit size={82} strokeWidth={1.1} className="relative z-10 text-violet-200" /><span className="core-caption">THINK · BUILD · ANALYZE</span></div>
-            <div className="float-card float-card-top"><span className="float-icon violet"><Workflow size={17} /></span><div><strong>Agentic workflows</strong><small>Multi-agent orchestration</small></div></div>
-            <div className="float-card float-card-right"><span className="float-icon mint"><Database size={17} /></span><div><strong>Data intelligence</strong><small>Insights from evidence</small></div></div>
-            <div className="float-card float-card-bottom"><span className="float-icon blue"><Code2 size={17} /></span><div><strong>Python · Azure</strong><small>Build and deploy</small></div></div>
-            <div className="spark spark-a">✳</div><div className="spark spark-b">✦</div><div className="spark spark-c">·</div>
+          <motion.div initial={{ opacity: 0, scale: .94, y: 18 }} animate={{ opacity: 1, scale: 1, y: 0 }} transition={{ duration: .8, delay: .22 }} className="portrait-stage">
+            <div className="portrait-aura" />
+            <div className="portrait-grid" />
+            <div className="portrait-frame">
+              <img src="/manoj-profile.webp" alt="Portrait of Chanda Manoj" className="portrait-image" />
+              <div className="portrait-shade" />
+              <div className="portrait-caption"><span>AI · DATA · ENGINEERING</span><strong>Building ideas<br />into impact.</strong></div>
+            </div>
+            <div className="portrait-float portrait-float-top"><span className="portrait-float-icon"><BrainCircuit size={17} /></span><span><b>Agentic AI</b><small>Multi-agent workflows</small></span></div>
+            <div className="portrait-float portrait-float-side"><span className="portrait-float-icon mint"><Database size={17} /></span><span><b>Data &amp; ML</b><small>Insights with Python</small></span></div>
+            <div className="portrait-index">01 <span>/ PROFILE</span></div>
           </motion.div>
         </div>
         <a href="#about" className="scroll-cue"><span>SCROLL TO EXPLORE</span><ArrowDown size={15} /></a>
